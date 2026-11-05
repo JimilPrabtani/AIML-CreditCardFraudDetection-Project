@@ -1,0 +1,326 @@
+{
+  "lab": {
+    "n": 113726,
+    "fraud_rate": 0.5,
+    "f1_at_05": 0.9998,
+    "roc_auc": 1.0,
+    "pr_auc": 0.9999
+  },
+  "prod_sim": {
+    "n": 50000,
+    "fraud_rate": 0.001,
+    "repeats": 5,
+    "cost_fp": 10,
+    "cost_fn": 500,
+    "threshold_table": [
+      {
+        "thr": 0.1,
+        "prec_mean": 0.1722,
+        "rec_mean": 1.0,
+        "f1_mean": 0.2938,
+        "cost_mean": 2404
+      },
+      {
+        "thr": 0.15,
+        "prec_mean": 0.2689,
+        "rec_mean": 1.0,
+        "f1_mean": 0.4239,
+        "cost_mean": 1360
+      },
+      {
+        "thr": 0.2,
+        "prec_mean": 0.4066,
+        "rec_mean": 1.0,
+        "f1_mean": 0.5781,
+        "cost_mean": 730
+      },
+      {
+        "thr": 0.25,
+        "prec_mean": 0.5287,
+        "rec_mean": 1.0,
+        "f1_mean": 0.6917,
+        "cost_mean": 446
+      },
+      {
+        "thr": 0.3,
+        "prec_mean": 0.5984,
+        "rec_mean": 1.0,
+        "f1_mean": 0.7486,
+        "cost_mean": 336
+      },
+      {
+        "thr": 0.35,
+        "prec_mean": 0.633,
+        "rec_mean": 1.0,
+        "f1_mean": 0.7752,
+        "cost_mean": 290
+      },
+      {
+        "thr": 0.4,
+        "prec_mean": 0.6634,
+        "rec_mean": 1.0,
+        "f1_mean": 0.7976,
+        "cost_mean": 254
+      },
+      {
+        "thr": 0.45,
+        "prec_mean": 0.7005,
+        "rec_mean": 1.0,
+        "f1_mean": 0.8238,
+        "cost_mean": 214
+      },
+      {
+        "thr": 0.5,
+        "prec_mean": 0.7511,
+        "rec_mean": 1.0,
+        "f1_mean": 0.8578,
+        "cost_mean": 166
+      },
+      {
+        "thr": 0.55,
+        "prec_mean": 0.7624,
+        "rec_mean": 1.0,
+        "f1_mean": 0.8651,
+        "cost_mean": 156
+      },
+      {
+        "thr": 0.6,
+        "prec_mean": 0.7965,
+        "rec_mean": 1.0,
+        "f1_mean": 0.8866,
+        "cost_mean": 128
+      },
+      {
+        "thr": 0.65,
+        "prec_mean": 0.7989,
+        "rec_mean": 1.0,
+        "f1_mean": 0.8882,
+        "cost_mean": 126
+      },
+      {
+        "thr": 0.7,
+        "prec_mean": 0.8835,
+        "rec_mean": 1.0,
+        "f1_mean": 0.9381,
+        "cost_mean": 66
+      },
+      {
+        "thr": 0.75,
+        "prec_mean": 0.9226,
+        "rec_mean": 1.0,
+        "f1_mean": 0.9597,
+        "cost_mean": 42
+      },
+      {
+        "thr": 0.8,
+        "prec_mean": 0.9437,
+        "rec_mean": 1.0,
+        "f1_mean": 0.9709,
+        "cost_mean": 30
+      },
+      {
+        "thr": 0.85,
+        "prec_mean": 0.9543,
+        "rec_mean": 1.0,
+        "f1_mean": 0.9766,
+        "cost_mean": 24
+      },
+      {
+        "thr": 0.9,
+        "prec_mean": 0.9612,
+        "rec_mean": 0.992,
+        "f1_mean": 0.9764,
+        "cost_mean": 220
+      }
+    ],
+    "example_at_best": {
+      "thr": 0.85,
+      "prec": 0.9615,
+      "rec": 1.0,
+      "f1": 0.9804,
+      "fp": 2,
+      "fn": 0,
+      "tp": 50,
+      "tn": 49948
+    }
+  },
+  "lab_threshold_table": [
+    {
+      "thr": 0.1,
+      "prec": 0.9952,
+      "rec": 1.0,
+      "f1": 0.9976,
+      "fp": 272,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56591
+    },
+    {
+      "thr": 0.15,
+      "prec": 0.9974,
+      "rec": 1.0,
+      "f1": 0.9987,
+      "fp": 151,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56712
+    },
+    {
+      "thr": 0.2,
+      "prec": 0.9985,
+      "rec": 1.0,
+      "f1": 0.9993,
+      "fp": 84,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56779
+    },
+    {
+      "thr": 0.25,
+      "prec": 0.9991,
+      "rec": 1.0,
+      "f1": 0.9995,
+      "fp": 53,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56810
+    },
+    {
+      "thr": 0.3,
+      "prec": 0.9993,
+      "rec": 1.0,
+      "f1": 0.9997,
+      "fp": 39,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56824
+    },
+    {
+      "thr": 0.35,
+      "prec": 0.9994,
+      "rec": 1.0,
+      "f1": 0.9997,
+      "fp": 32,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56831
+    },
+    {
+      "thr": 0.4,
+      "prec": 0.9995,
+      "rec": 1.0,
+      "f1": 0.9997,
+      "fp": 30,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56833
+    },
+    {
+      "thr": 0.45,
+      "prec": 0.9996,
+      "rec": 1.0,
+      "f1": 0.9998,
+      "fp": 24,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56839
+    },
+    {
+      "thr": 0.5,
+      "prec": 0.9996,
+      "rec": 1.0,
+      "f1": 0.9998,
+      "fp": 20,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56843
+    },
+    {
+      "thr": 0.55,
+      "prec": 0.9997,
+      "rec": 1.0,
+      "f1": 0.9998,
+      "fp": 18,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56845
+    },
+    {
+      "thr": 0.6,
+      "prec": 0.9997,
+      "rec": 1.0,
+      "f1": 0.9999,
+      "fp": 15,
+      "fn": 1,
+      "tp": 56862,
+      "tn": 56848
+    },
+    {
+      "thr": 0.65,
+      "prec": 0.9998,
+      "rec": 1.0,
+      "f1": 0.9999,
+      "fp": 14,
+      "fn": 1,
+      "tp": 56862,
+      "tn": 56849
+    },
+    {
+      "thr": 0.7,
+      "prec": 0.9999,
+      "rec": 1.0,
+      "f1": 0.9999,
+      "fp": 7,
+      "fn": 1,
+      "tp": 56862,
+      "tn": 56856
+    },
+    {
+      "thr": 0.75,
+      "prec": 0.9999,
+      "rec": 0.9999,
+      "f1": 0.9999,
+      "fp": 5,
+      "fn": 5,
+      "tp": 56858,
+      "tn": 56858
+    },
+    {
+      "thr": 0.8,
+      "prec": 0.9999,
+      "rec": 0.9997,
+      "f1": 0.9998,
+      "fp": 4,
+      "fn": 16,
+      "tp": 56847,
+      "tn": 56859
+    },
+    {
+      "thr": 0.85,
+      "prec": 0.9999,
+      "rec": 0.9989,
+      "f1": 0.9994,
+      "fp": 3,
+      "fn": 60,
+      "tp": 56803,
+      "tn": 56860
+    },
+    {
+      "thr": 0.9,
+      "prec": 1.0,
+      "rec": 0.997,
+      "f1": 0.9985,
+      "fp": 2,
+      "fn": 173,
+      "tp": 56690,
+      "tn": 56861
+    }
+  ],
+  "best_threshold": 0.85,
+  "top_features": [
+    "V15",
+    "V11",
+    "V5"
+  ],
+  "note": "Balanced lab is trivially separable (~0.999). Prod sim shows precision collapse at 0.1% fraud. Threshold chosen by min expected cost on prod sim."
+}
