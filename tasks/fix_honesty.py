@@ -98,5 +98,4 @@ with open("artifacts/prod_metrics.json", "w") as f:
     json.dump(out, f, indent=2)
 with open("artifacts/threshold.json", "w") as f:
     json.dump({"threshold": BEST_THR, "cost_fp": COST_FP, "cost_fn": COST_FN}, f, indent=2)
-pd.DataFrame(prod_thr_rows).to_csv("artifacts/threshold_cost_table.csv", index=False)
 print(f"BEST_THR={BEST_THR} example_prod={example} lab_f1={round(float(lab_f1),4)}")
