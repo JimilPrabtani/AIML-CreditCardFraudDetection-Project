@@ -4,6 +4,8 @@ Local ML demo: a frozen RandomForest scores 2023 card transactions as **FRAUD / 
 
 > Lab accuracy looks perfect (F1 ~0.999) because the test set is 50/50 balanced. Real fraud is ~0.1% — the app shows both views side by side so the demo doesn't mislead.
 
+![Stack](/stack.png)
+
 ## Dataset
 
 - File: `creditcard_2023.csv` (568,630 rows, local only, git-ignored — download from [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023) and place next to the notebook)
