@@ -24,6 +24,9 @@ Best model: **RandomForest (200 trees, max_depth 25)**. Full details in [`MODEL_
 
 Threshold 0.85 comes from `tasks/fix_honesty.py`: resamples frozen test scores to 5× 50k-row 0.1% simulations, prices errors at FP = $10 review / FN = $500 missed fraud, picks minimum cost. Top features: V15, V11, V5.
 
+![LogisticRegression](images/LogisticRegression.png)
+![Threshold](images/threshold.png)
+
 ## Quickstart (Windows, VS Code)
 
 ```powershell
