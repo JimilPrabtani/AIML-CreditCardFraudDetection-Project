@@ -1,0 +1,136 @@
+{
+  "baselines": [
+    {
+      "model": "logreg",
+      "acc": 0.9649,
+      "prec": 0.977,
+      "rec": 0.9523,
+      "f1": 0.9645,
+      "roc_auc": 0.9935,
+      "pr_auc": 0.9944,
+      "fp": 1272,
+      "fn": 2715,
+      "tp": 54148,
+      "tn": 55591,
+      "fit_s": 1.3,
+      "single_ms": 5.022,
+      "batch1000_ms": 4.9
+    },
+    {
+      "model": "bagging",
+      "acc": 0.9991,
+      "prec": 0.9985,
+      "rec": 0.9998,
+      "f1": 0.9991,
+      "roc_auc": 1.0,
+      "pr_auc": 0.9999,
+      "fp": 88,
+      "fn": 11,
+      "tp": 56852,
+      "tn": 56775,
+      "fit_s": 261.1,
+      "single_ms": 6.441,
+      "batch1000_ms": 6.1
+    },
+    {
+      "model": "rf200_frozen",
+      "acc": 0.9998,
+      "prec": 0.9996,
+      "rec": 1.0,
+      "f1": 0.9998,
+      "roc_auc": 1.0,
+      "pr_auc": 0.9999,
+      "fp": 20,
+      "fn": 0,
+      "tp": 56863,
+      "tn": 56843,
+      "fit_s": 0.0,
+      "single_ms": 50.575,
+      "batch1000_ms": 66.1
+    },
+    {
+      "model": "xgb",
+      "acc": 0.9983,
+      "prec": 0.9973,
+      "rec": 0.9992,
+      "f1": 0.9983,
+      "roc_auc": 0.9999,
+      "pr_auc": 0.9999,
+      "fp": 151,
+      "fn": 43,
+      "tp": 56820,
+      "tn": 56712,
+      "fit_s": 6.5,
+      "single_ms": 5.014,
+      "batch1000_ms": 4.6
+    },
+    {
+      "model": "isolationforest",
+      "acc": 0.6089,
+      "prec": 0.6088,
+      "rec": 0.6097,
+      "f1": 0.6092,
+      "roc_auc": null,
+      "pr_auc": null,
+      "fp": 22280,
+      "fn": 22195,
+      "tp": 34668,
+      "tn": 34583,
+      "fit_s": 2.9,
+      "single_ms": null,
+      "batch1000_ms": null
+    }
+  ],
+  "cv5_rf_60k": {
+    "f1": [
+      0.9992,
+      0.9981,
+      0.9976,
+      0.9979,
+      0.9982
+    ],
+    "roc": [
+      1.0,
+      0.9999,
+      1.0,
+      1.0,
+      0.9999
+    ],
+    "pr": [
+      1.0,
+      0.9998,
+      1.0,
+      1.0,
+      0.9998
+    ],
+    "mean_f1": 0.9982
+  },
+  "ablations": [
+    {
+      "ablation": "full_rf100_ref",
+      "f1": 0.9998,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    {
+      "ablation": "no_amount",
+      "f1": 0.9998,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    {
+      "ablation": "no_top3_V15_V11_V5",
+      "f1": 0.9998,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    {
+      "ablation": "no_amount_no_top3",
+      "f1": 0.9998,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    }
+  ],
+  "n_test": 113726,
+  "note": "lab is 50/50 balanced; see prod_metrics.json for 0.1% sim"
+}

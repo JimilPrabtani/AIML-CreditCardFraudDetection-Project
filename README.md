@@ -4,7 +4,7 @@ Local ML demo: a frozen RandomForest scores 2023 card transactions as **FRAUD / 
 
 > Lab accuracy looks perfect (F1 ~0.999) because the test set is 50/50 balanced. Real fraud is ~0.1% — the app shows both views side by side so the demo doesn't mislead.
 
-![Stack](/stack.png)
+![Stack](Stack.png)
 
 ## Dataset
 
@@ -26,6 +26,13 @@ Threshold 0.85 comes from `tasks/fix_honesty.py`: resamples frozen test scores t
 
 ![LogisticRegression](images/LogisticRegression.png)
 ![Threshold](images/threshold.png)
+
+## Research paper (IEEE format)
+
+`paper/root.tex` — conference paper in IEEEtran two-column format
+(matching `IEEE-research-paper-referance.pdf`): cost-aware triage,
+five-model benchmark, prod-simulation thresholding, ablations,
+honest limits. See `paper/README.md` to compile to PDF.
 
 ## Quickstart (Windows, VS Code)
 

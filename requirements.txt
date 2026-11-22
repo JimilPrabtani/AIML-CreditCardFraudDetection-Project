@@ -7,3 +7,4 @@ seaborn==0.13.2
 joblib==1.6.0
 streamlit==1.66.1
 jupyter==1.1.1
+reportlab==5.1.0  # paper/root.pdf regen only (tasks/make_paper_pdf.py)
