@@ -5,7 +5,7 @@ Source: `root.tex` — IEEEtran, US Letter, two-column, matches
 
 ## Compile (needs LaTeX once; no Python needed)
 
-Overleaf: upload `root.tex` + `figs/` + `../images/` (or set `\graphicspath`)
+Overleaf: upload `root.tex` + `figs/`
 and compile with pdfLaTeX (`IEEEtran.cls` is preinstalled on
 Overleaf and in TeX Live / MiKTeX — no need to upload it).
 

@@ -25,7 +25,13 @@ Best model: **RandomForest (200 trees, max_depth 25)**. Full details in [`MODEL_
 Threshold 0.85 comes from `tasks/fix_honesty.py`: resamples frozen test scores to 5× 50k-row 0.1% simulations, prices errors at FP = $10 review / FN = $500 missed fraud, picks minimum cost. Top features: V15, V11, V5.
 
 ![LogisticRegression](images/LogisticRegression.png)
-![Threshold](images/threshold.png)
+![Threshold](images/Threshold.png)
+
+## Test evidence (`tasks/smoke_test.py` passes; full re-run: `tasks/audit_eval.py`)
+
+![Cost vs threshold](paper/figs/cost_thr.png)
+![Lab confusion @0.5](paper/figs/cm_lab_05.png)
+![ROC and PR](paper/figs/roc_pr.png)
 
 ## Research paper (IEEE format)
 
@@ -66,12 +72,18 @@ pip install -r requirements.txt
 ```
 analysis_model.ipynb        # train + compare 5 models + export to artifacts/
 app.py                      # Streamlit triage console (inference only)
-tasks/fix_honesty.py         # cost-based threshold + prod simulation (no retrain)
+tasks/fix_honesty.py        # cost-based threshold + prod simulation (no retrain)
+tasks/audit_eval.py         # baselines + ablations + latency + CV -> audit_metrics.json
+tasks/make_paper_figs.py    # paper/figs/ from frozen artifacts
+tasks/make_paper_pdf.py     # paper/root.pdf regen (IEEE-styled)
+tasks/smoke_test.py         # inference-only smoke test
 MODEL_CARD.md               # model card, intended use, limits
+paper/root.tex + root.pdf   # IEEE conference paper (tex compiles on Overleaf)
 artifacts/
-  fraud_pipeline.pkl        # frozen RF pipeline (37 MB, git-ignored if large)
+  fraud_pipeline.pkl        # frozen RF pipeline (37 MB, git-ignored)
   threshold.json            # {"threshold": 0.85, ...}
   prod_metrics.json         # lab + prod-sim tables the app renders
+  audit_metrics.json        # baselines, ablations, latency, CV re-run
   sample_test_rows.csv      # held-out sample rows for the demo picker
 requirements.txt
 ```
