@@ -17,12 +17,12 @@ pdflatex root.tex
 pdflatex root.tex
 ```
 
-Output: `paper/root.pdf` — generated, committed, ready to submit
+Output: `paper/research-paper.pdf` — generated, ready to submit
 alongside the `root.tex` source.
 
 Readable PDF without LaTeX: `tasks/make_paper_pdf.py` regenerates
-`paper/root.pdf` (IEEE-styled two-column, same verified numbers and
-`paper/figs/` figures) — already built and committed.
+`paper/research-paper.pdf` (IEEE-styled two-column, same verified numbers and
+`paper/figs/` figures) — already built, uncommitted for you to review.
 
 ## What the paper reports (all numbers verified)
 

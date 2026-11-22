@@ -34,7 +34,7 @@ col2 = Frame(M + COLW + 0.25 * inch, M, COLW, H - TOP - M - 3.3 * inch, id="c2")
 col1l = Frame(M, M, COLW, H - TOP - M, id="c1l")
 col2l = Frame(M + COLW + 0.25 * inch, M, COLW, H - TOP - M, id="c2l")
 
-doc = BaseDocTemplate("paper/root.pdf", pagesize=LETTER,
+doc = BaseDocTemplate("paper/research-paper.pdf", pagesize=LETTER,
                       title="Cost-Aware Credit Card Fraud Triage",
                       author="AIML-CreditCardFraudDetection-Project")
 doc.addPageTemplates([
@@ -84,7 +84,7 @@ w5l = [cw * 0.16, cw * 0.21, cw * 0.21, cw * 0.21, cw * 0.21]
 story = [
     P("Cost-Aware Credit Card Fraud Triage on the 2023 European Cardholder Dataset: From Balanced-Lab Benchmarks to Production-Realistic Thresholding", stTitle),
     Spacer(1, 8),
-    P("Author Name<br/>Department, University — City, Country<br/>email@university.edu", stAuthor),
+    P("Dhairya Poojara, Jimil Prabtani, and Yash Mishra<br/>UIT, Karnavati University — Gandhinagar, India<br/>jimil111prabtani@gmail.com, dhairyapoojara12@gmail.com, ku2000016657@karnavatiuniversity.edu.in", stAuthor),
     Spacer(1, 8),
     P("Abstract—", stAbsT),
     P("Credit card fraud detection is a high-stakes, cost-asymmetric classification problem: a missed fraud costs orders of magnitude more than an unnecessary manual review, yet public benchmarks are often released with balanced class ratios that do not match production traffic. We study the 2023 European cardholder dataset (568,630 transactions, PCA-anonymized features V1–V28 plus Amount) with a leakage-safe pipeline and compare five approaches: logistic regression, bagging, random forest, XGBoost, and an unsupervised Isolation Forest contrast. The shipped random forest (200 trees, max_depth 25; 5-fold CV mean F1 0.9999) scores F1 0.9998, ROC-AUC 1.0 and PR-AUC 0.9999 on the balanced held-out test (113,726 rows). Resampling frozen scores into five 50,000-row simulations at 0.1% fraud with costs FP $10 / FN $500 selects threshold 0.85, cutting expected cost from $166 (at 0.5) to $24 while holding recall at 1.0 and raising precision 0.751 to 0.954. A frozen pipeline backs a local Streamlit triage console showing lab and production views side by side.", stAbs),
@@ -181,4 +181,4 @@ story = [
     P("[10] F. Pedregosa et al., Scikit-learn: Machine learning in Python, J. Machine Learning Research, 12:2825-2830, 2011.", stRef),
 ]
 doc.build(story)
-print("wrote paper/root.pdf")
+print("wrote paper/research-paper.pdf")
