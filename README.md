@@ -94,3 +94,8 @@ requirements.txt
 - `V1–V28` are anonymized — no case-level explanation possible; `Amount` is the only interpretable knob.
 - Threshold assumes FP = $10 / FN = $500 — change the costs, change the threshold.
 - Demo only: not a bank production system, no real-time blocking, no PII handling beyond in-memory scoring.
+
+Team  members 
+- Jimil Prabtani
+- Dhairya Poojara
+- Yashwant Mishra
